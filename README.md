@@ -17,18 +17,18 @@ Introduction to the Arduino BLE Sense:
 
 -   Matt's github: <https://github.com/mattjarvis/data-collection-workshop-code>
 
-1.  Upload blink sketch to test everything works ok!
+a.  Upload blink sketch to test everything works ok!
 
-1\. Set up real-time serial connection to computer
+b\. Set up real-time serial connection to computer
 
-1.  Send real-time humidity & temperature data from sensors through the serial port:
+c.  Send real-time humidity & temperature data from sensors through the serial port:
 
 -   Install the HTS221 library from the library manager
 -   Open the HTS221 example from the example sketches menu
 -   Upload the example sketch
 -   Open the serial monitor and check you are getting data
 
-1.  Send the audio analysis through the serial port:
+d.  Send the audio analysis through the serial port:
 
 -   Open the PDM Serial Plotter example
 -   Upload the PDM example sketch
@@ -37,7 +37,7 @@ Introduction to the Arduino BLE Sense:
 -   Review the documentation: <https://docs.arduino.cc/learn/built-in-libraries/pdm>
 -   What happens if you change the number of channels? How about the frequency?
 
-1.  Run a program on the computer to use the data in something
+e.  Run a program on the computer to use the data in something
 
 -   Change the channel number back to 1 in the PDM example sketch
 -   Open the ***GraphProcessingCode*** Processing 3 sketch (Install Processing, if you don't have it: <https://processing.org/download>)
@@ -45,7 +45,7 @@ Introduction to the Arduino BLE Sense:
 -   Run the sketch and watch the results
 -   What happens if you change the input and output of the map() function (on line 63)?
 
-1.  Let's try getting some data in really fast, using the built in accelerometer
+f.  Let's try getting some data in really fast, using the built in accelerometer
 
 -   Open the Arduino sketch at <https://github.com/mattjarvis/data-collection-workshop-code/blob/main/2%20-%20AccelerometerTest/AccelerometerTest.ino>
 -   Upload it to the arduino
@@ -57,11 +57,11 @@ Introduction to the Arduino BLE Sense:
 
 Now we are familiar in having the Arduino give us data, let's try and do something with it. Let's start by saving the data:
 
-1.  Upload the ENV sensing Arduino sketch
+a.  Upload the ENV sensing Arduino sketch
 
 -   <https://github.com/mattjarvis/data-collection-workshop-code/tree/main/3.1_SendEnvData>
 
-1.  Run a bridge program to save your data
+b.  Run a bridge program to save your data
 
 -   <https://github.com/mattjarvis/data-collection-workshop-code/tree/main/ProcessingSketches/sketch_3_SaveSerialInputAsTable>
 
@@ -69,12 +69,12 @@ Now we are familiar in having the Arduino give us data, let's try and do somethi
 
 Now let's look at ways to use the data with MQTT:
 
-1.  Upload the ENV sensing Arduino sketch
+a.  Upload the ENV sensing Arduino sketch
 
 -   <https://github.com/mattjarvis/data-collection-workshop-code/tree/main/3.1_SendEnvData>
 
-1.  Run a bridge program to send data to MQTT on cci server
+b.  Run a bridge program to send data to MQTT on cci server
 
 -   <https://github.com/mattjarvis/data-collection-workshop-code/tree/main/ProcessingSketches/sketch_4_PublishSerialToMQTT>
 
-1.  Show incoming MQTT data with <http://mqtt-explorer.com/>
+c.  Show incoming MQTT data with <http://mqtt-explorer.com/>
